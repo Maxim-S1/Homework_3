@@ -6,15 +6,16 @@
 
 Console.Write("Введите число: ");
 int N = Convert.ToInt32(Console.ReadLine());
+N = Math.Abs(N);
 // for (int i = 1; i <= N; i++)
 // {
 //     Console.WriteLine(Math.Pow(i, 3));
 // }
 int i = 1;
 
-if (i <= N)
+while  (i <= N)
 {
-     int res = Math.Pow(i, 3);
-     Console.WriteLine(res);
+     double res = Math.Pow(i, 3);
+     Console.Write(res + ", ");
      i++;
 }
